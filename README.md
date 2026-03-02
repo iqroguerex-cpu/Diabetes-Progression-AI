@@ -10,7 +10,7 @@ An interactive Machine Learning dashboard that predicts diabetes disease progres
 
 ---
 
-## 🚀 Live Demo
+## 🚀 Live Demo.
 
 [![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Open%20App-success?style=for-the-badge)](https://mlproject7bychinmay.streamlit.app/)
 
