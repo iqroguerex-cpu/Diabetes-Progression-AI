@@ -20,7 +20,7 @@ An interactive Machine Learning dashboard that predicts diabetes disease progres
 
 - Python.
 - Scikit-Learn.
-- Pandas & NumPy  
+- Pandas & NumPy.
 - Matplotlib & Seaborn  
 - Streamlit  
 
