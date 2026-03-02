@@ -1,4 +1,4 @@
-# 🩺 Diabetes Progression Prediction
+# 🩺 Diabetes Progression Prediction.
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)]()
 [![Streamlit](https://img.shields.io/badge/Built%20with-Streamlit-FF4B4B.svg)]()
