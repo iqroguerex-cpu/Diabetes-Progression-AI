@@ -18,7 +18,7 @@ An interactive Machine Learning dashboard that predicts diabetes disease progres
 
 ## ⚙️ Tech Stack
 
-- Python  
+- Python.
 - Scikit-Learn  
 - Pandas & NumPy  
 - Matplotlib & Seaborn  
