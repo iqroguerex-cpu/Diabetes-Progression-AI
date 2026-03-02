@@ -105,18 +105,37 @@ tab1, tab2, tab3, tab4 = st.tabs(
 with tab1:
     st.subheader("Adjust Patient Features")
 
+    feature_info = {
+        "age": "Age of the patient (standardized value)",
+        "sex": "Gender of the patient (encoded numerically)",
+        "bmi": "Body Mass Index — indicator of body fat",
+        "bp": "Average Blood Pressure",
+        "s1": "Total Serum Cholesterol",
+        "s2": "Low-Density Lipoproteins (LDL - bad cholesterol)",
+        "s3": "High-Density Lipoproteins (HDL - good cholesterol)",
+        "s4": "Total Cholesterol / HDL Ratio",
+        "s5": "Log of Serum Triglycerides",
+        "s6": "Blood Sugar Level"
+    }
+
     user_inputs = []
 
-    cols = st.columns(5)
+    cols = st.columns(2)
 
     for i, feature in enumerate(data.feature_names):
-        value = cols[i % 5].slider(
-            feature,
-            float(df[feature].min()),
-            float(df[feature].max()),
-            float(df[feature].mean())
-        )
-        user_inputs.append(value)
+        col = cols[i % 2]
+
+        with col:
+            value = st.slider(
+                label=feature,
+                min_value=float(df[feature].min()),
+                max_value=float(df[feature].max()),
+                value=float(df[feature].mean()),
+                help=feature_info[feature]
+            )
+
+            st.caption(feature_info[feature])
+            user_inputs.append(value)
 
     user_inputs = np.array(user_inputs).reshape(1, -1)
     user_inputs = sc.transform(user_inputs)
