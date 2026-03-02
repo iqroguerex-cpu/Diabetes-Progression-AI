@@ -26,6 +26,6 @@ An interactive Machine Learning dashboard that predicts diabetes disease progres
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Author.
 
 **Chinmay V Chatradamath.**
